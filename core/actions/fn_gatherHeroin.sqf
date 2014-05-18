@@ -13,10 +13,12 @@ if(_sum > 0) then
 	life_action_inUse = true;
 	titleText["Gathering Heroin...","PLAIN"];
 	titleFadeOut 5;
+	player playMove "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";
 	sleep 5;
 	if(([true,"heroinu",1] call life_fnc_handleInv)) then
 	{
 		titleText["You have collected some heroin.","PLAIN"];
+		playSound "bag";
 	};
 };
 

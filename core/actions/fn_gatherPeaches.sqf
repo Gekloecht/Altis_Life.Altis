@@ -17,6 +17,7 @@ if(_sum > 0) then
 	if(([true,"peach",_sum] call life_fnc_handleInv)) then
 	{
 		titleText[format["You have picked %1 Peach(es)",_sum],"PLAIN"];
+		playSound "bag";
 	};
 }
 	else

@@ -46,12 +46,83 @@ class CfgSounds
     sound[] = {"\sounds\Siren_Long.ogg", 1.0, 1};
     titles[] = {};
   };
-    class tazersound
+  class tazersound
   {
     name = "Tazersound";
     sound[] = {"\sounds\tazer.ogg", 0.25, 1};
     titles[] = {};
   };
+  class BeepBeep
+  {
+    name = "BeepBeep";
+    sound[] = {"\sounds\BeepBeep.ogg", 0.9, 1};
+    titles[] = {};
+  };
+  class Beep
+  {
+    name = "Beep";
+    sound[] = {"\sounds\Beep.ogg", 0.9, 1};
+    titles[] = {};
+  };
+  class Bag
+  {
+	name = "bag";
+	sound[] = {"\sounds\bag.ogg", 1, 1};
+	titles[] = {};
+  };
+  class Caching
+  {
+	name = "caching";
+	sound[] = {"\sounds\caching.ogg", 1, 1};
+	titles[] = {};
+  };
+  class Message
+  {
+   name = "message";
+   sound[] = {"\sounds\message.ogg", 0.95, 0.95};
+   titles[] = {};
+  };
+  class Mining
+  {
+	name = "mining";
+    sound[] = {"\sounds\mining.ogg", 0.95, 0.95};
+    titles[] = {};
+  };
+  class Cuff
+  {
+    name = "cuff";
+    sound[] = {"\sounds\cuff.ogg", 0.95, 0.95};
+    titles[] = {};
+  };
+  class Eat
+  {
+    name = "eat";
+    sound[] = {"\sounds\eat.ogg", 0.95, 0.95};
+    titles[] = {};
+  };
+  
+  class Flashbang
+  {
+    name = "Flashbang";
+    sound[] = {"\sounds\flashbang.ogg", 1.0, 1};
+    titles[] = {};
+  };
+  
+  class car_alarm
+	{
+		name="car_alarm";
+		sound[] = {"\sounds\alarmevoiture.ogg", 1, 1};
+		titles[] = {};
+	
+	};
+	
+	class bank_alarm
+  {
+    name = "bank_alarm";
+    sound[] = {"\sounds\bank.ogg", 1.0, 1};
+    titles[] = {};
+  };
+  
 };
 
 class CfgDebriefing

@@ -56,23 +56,32 @@ switch (_var) do
 	case "life_inv_rock": {"Rock"};
 	case "life_inv_cement": {"Cement Bag"};
 	case "life_inv_goldbar": {"Gold Bar"};
+	case "life_inv_methu": {"Unprocessed Meth"};
+	case "life_inv_methp": {"Pure Methamphetamine"};
 	case "life_inv_storage1": {"House Storage"};
-    case "life_inv_storage2": {"House Storage Large"};
-    	
+    case "life_inv_storage2": {"Coffre de maison"};
+    case "life_inv_moonshine": {"Moon Shine"};
+	case "life_inv_vodka": {"Vin"};
+	case "life_inv_grapes": {"Grappes"};
+	case "life_inv_artefact": {"Artefact"};
+	case "life_inv_ephedrine": {"Ephedrine"};
+	case "life_inv_phosphore": {"Phosphore"};
+    
+	
 	//License Block
-	case "license_civ_driver": {"Driver License"};
-	case "license_civ_air": {"Pilot License"};
+	case "license_civ_driver": {"Permis de Voiture"};
+	case "license_civ_air": {"Licence de Pilote"};
 	case "license_civ_heroin": {"Heroin Training"};
 	case "license_civ_gang": {"Gang License"};
 	case "license_civ_oil": {"Oil Processing"};
 	case "license_civ_dive": {"Diving License"};
 	case "license_civ_boat": {"Boating License"};
-	case "license_civ_gun": {"Firearm License"};
-	case "license_cop_air": {"Pilot License"};
+	case "license_civ_gun": {"Licence d'arme à feu"};
+	case "license_cop_air": {"Licence de Pilote"};
 	case "license_cop_swat": {"Swat License"};
-	case "license_cop_cg": {"Coast Guard"};
-	case "license_civ_rebel": {"Rebel Training"};
-	case "license_civ_truck": {"Truck License"};
+	case "license_cop_cg": {"Garde Cote"};
+	case "license_civ_rebel": {"Entrainement Rebel"};
+	case "license_civ_truck": {"Licence Camion"};
 	case "license_civ_diamond": {"Diamond Processing"};
 	case "license_civ_copper": {"Copper Processing"};
 	case "license_civ_iron": {"Iron Processing"};
@@ -81,5 +90,12 @@ switch (_var) do
 	case "license_civ_coke": {"Cocaine Training"};
 	case "license_civ_marijuana": {"Marijuana Training"};
 	case "license_civ_cement": {"Cement Mixing License"};
-	case "license_civ_home": {"Home Owner License"};
+	case "license_civ_meth": {"Methamphetamine Training"};
+	case "license_civ_home": {"License Propriétaire"};
+	case "license_civ_grapes": {"Grappe Processing"};
+	case "license_civ_moonshine": {"Moonshine Processing"};
+	case "license_civ_presse": {"Journaliste"};
+	case "license_civ_tbs": {"Tactical Black Soldiers"};
+	
+    
 };

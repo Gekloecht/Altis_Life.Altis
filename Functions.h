@@ -84,6 +84,15 @@ class Life_Client_Core
 		class storeVehicle {};
 		class robAction {};
 		class sellTurtle {};
+		class gatherDiamond {};
+		class gatherCopper {};
+		class gatherSalt {};
+		class gatherRock {};
+		class gatherSand {};
+		class gatherIron {};
+		class gatherMeth {};
+		class gatherGrapes {};
+		class gatherArtefact {};
 	};
 	
 	class Config

@@ -62,6 +62,14 @@ switch (_mode) do
 			case "goldbar": {"life_inv_goldbar"};
 			case "storage1": {"life_inv_storage1"};
             case "storage2": {"life_inv_storage2"};
+			case "methu": {"life_inv_methu"};
+			case "methp": {"life_inv_methp"};
+			case "moonshine": {"life_inv_moonshine"};
+			case "vodka": {"life_inv_vodka"};
+			case "grapes": {"life_inv_grapes"};
+			case "artefact": {"life_inv_artefact"};
+			case "ephedrine": {"life_inv_ephedrine"};
+			case "phosphore": {"life_inv_phosphore"};
 		};
 	};
 	
@@ -115,6 +123,14 @@ switch (_mode) do
 			case "life_inv_goldbar": {"goldbar"};
 			case "life_inv_storage1": {"storage1"};
             case "life_inv_storage2": {"storage2"};
+			case "life_inv_methu": {"methu"};
+			case "life_inv_methp": {"methp"};
+			case "life_inv_moonshine": {"moonshine"};
+			case "life_inv_vodka": {"vodka"};
+			case "life_inv_grapes": {"grapes"};
+			case "life_inv_artefact": {"artefact"};
+			case "life_inv_ephedrine": {"ephedrine"};
+			case "life_inv_phosphore": {"phosphore"};
 		};
 	};
 };
