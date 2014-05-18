@@ -5,12 +5,13 @@
 	Description:
 	Initializes the civilian.
 */
+[] call life_fnc_initHouses;
 private["_spawnPos"];
 
-civ_spawn_1 = nearestObjects[getMarkerPos  "civ_spawn_1", ["Land_i_House_Big_01_V1_F","Land_i_House_Small_01_V2_F","Land_i_House_Small_03_V1_F"],250];
-civ_spawn_2 = nearestObjects[getMarkerPos  "civ_spawn_2", ["Land_i_House_Big_01_V1_F","Land_i_House_Small_01_V2_F","Land_i_House_Small_03_V1_F"],250];
-civ_spawn_3 = nearestObjects[getMarkerPos  "civ_spawn_3", ["Land_i_House_Big_01_V1_F","Land_i_House_Small_01_V2_F","Land_i_House_Small_03_V1_F"],250];
-civ_spawn_4 = nearestObjects[getMarkerPos  "civ_spawn_4", ["Land_i_House_Big_01_V1_F","Land_i_House_Small_01_V2_F","Land_i_House_Small_03_V1_F"],250];
+civ_spawn_1 = nearestObjects[getMarkerPos  "civ_spawn_1", ["Land_u_House_Big_01_V1_F","Land_u_Shop_01_V1_F","Land_u_House_Big_02_V1_F","Land_u_Shop_02_V1_F","Land_u_House_Small_01_V1_F","Land_u_House_Small_02_V1_F"],250];
+civ_spawn_2 = nearestObjects[getMarkerPos  "civ_spawn_2", ["Land_u_House_Big_01_V1_F","Land_u_Shop_01_V1_F","Land_u_House_Big_02_V1_F","Land_u_Shop_02_V1_F","Land_u_House_Small_01_V1_F","Land_u_House_Small_02_V1_F"],250];
+civ_spawn_3 = nearestObjects[getMarkerPos  "civ_spawn_3", ["Land_u_House_Big_01_V1_F","Land_u_Shop_01_V1_F","Land_u_House_Big_02_V1_F","Land_u_Shop_02_V1_F","Land_u_House_Small_01_V1_F","Land_u_House_Small_02_V1_F"],250];
+civ_spawn_4 = nearestObjects[getMarkerPos  "civ_spawn_4", ["Land_u_House_Big_01_V1_F","Land_u_Shop_01_V1_F","Land_u_House_Big_02_V1_F","Land_u_Shop_02_V1_F","Land_u_House_Small_01_V1_F","Land_u_House_Small_02_V1_F"],250];
 
 waitUntil {!(isNull (findDisplay 46))};
 

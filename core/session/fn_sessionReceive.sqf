@@ -70,6 +70,8 @@ switch (playerSide) do
 		__CONST__(life_donator,parseNumber(_session select 7));
 		civ_gear = (_session select 8);
 		[] spawn life_fnc_civLoadGear;
+		life_houses = (_session select 9);
+        life_houses_markers = [];
 		__CONST__(life_coplevel,0);
 	};
 	

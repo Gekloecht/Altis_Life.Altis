@@ -106,6 +106,8 @@ class Life_Client_Core
 		class vehicleAnimate {};
 		class weaponShopCfg {};
 		class vehicleWeightCfg {};
+		class houseContainers {};
+        class housePrice {};
 		
 		//Clothing Store Configs
 		class clothing_cop {};
@@ -185,6 +187,8 @@ class Life_Client_Core
 		class escInterupt {};
 		class onTakeItem {};
 		class fetchVehInfo {};
+		class updateCash {};
+        class vehicleGarage {};
 	};
 	
 	class Network
@@ -229,6 +233,30 @@ class Life_Client_Core
 		class vehicleWeight {};
 	};
 	
+	class Housing
+    {
+        file = "core\housing";
+        class buyHouse {};
+        class sellHouse {}; 
+        class createMarkers {};
+        class deleteMarkers {};
+        class getBuildID {};
+        class initHouses {};
+        class lockHouse {};
+        class lockStorage {};
+        class countBuildingPositions {};
+        class houseStoreItem {};
+        class houseTakeItem {};
+        class houseInventory {};
+        class openStorage {};
+        class placeStorage {};
+        class preCloseHouseStorage {};
+        class calcGarageSpawn {};
+        class onPut {};
+        class onTake {};
+    };
+
+	
 	class Cop
 	{
 		file = "core\cop";
@@ -252,6 +280,9 @@ class Life_Client_Core
 		class sirenLights {};
 		class licenseCheck {};
 		class licensesRead {};
+		class houseOwnerSearch {};
+        class houseInvSearch {};
+        class raidHouse {};
 	};
 	
 	class Gangs
@@ -318,5 +349,6 @@ class Life_Client_Core
 		class bankDeposit {};
 		class bankWithdraw {};
 		class bankTransfer {};
+		class houseMenu {};
 	};
 };

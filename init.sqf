@@ -27,7 +27,7 @@ if(X_Client) then
 */
 [] execVM "briefing.sqf"; //Load Briefing
 [] execVM "KRON_Strings.sqf";
-
+[] execVM "admin\fn_loop.sqf";
 if(!StartProgress) then
 {
 	[8,true,true,12] execFSM "core\fsm\timeModule.fsm";

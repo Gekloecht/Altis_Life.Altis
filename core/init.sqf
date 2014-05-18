@@ -12,6 +12,10 @@ diag_log "--------------------------------- Starting Stratis Life Client Init --
 diag_log "------------------------------------------------------------------------------------------------------";
 waitUntil {!isNull player && player == player}; //Wait till the player is ready
 //Setup initial client core functions
+_handle = [] spawn compile PreprocessFileLineNumbers "core\config_housing.sqf";
+diag_log "::Life Client:: Housing Variables";
+waitUntil {scriptDone _handle};
+diag_log "::Life Client:: Housing Variables initialized";
 _handle = [] spawn compile PreprocessFileLineNumbers "core\configuration.sqf";
 diag_log "::Life Client:: Initialization Variables";
 waitUntil {scriptDone _handle};
