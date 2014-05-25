@@ -274,6 +274,7 @@ class Life_Client_Core
 	class Cop
 	{
 		file = "core\cop";
+		class copEnter {};
 		class copMarkers {};
 		class copLights {};
 		class loadGear {};
