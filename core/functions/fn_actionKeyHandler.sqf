@@ -30,12 +30,8 @@ life_action_inUse = true;
 };
 
 //Check if it's a dead body.
-if(_curTarget isKindOf "Man" && {!alive _curTarget} && {playerSide in [west,independent]}) exitWith {
-	if(playerSide == west && {(call life_revive_cops)} && {"Medkit" in (items player)}) then {
+if(_curTarget isKindOf "Man" && {!alive _curTarget} && {playerSide == independent}) exitWith {
 		[_curTarget] call life_fnc_revivePlayer;
-	} else {
-		[_curTarget] call life_fnc_revivePlayer;
-	};
 };
 
 //If target is a player then check if we can use the cop menu.

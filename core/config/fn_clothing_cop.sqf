@@ -20,27 +20,31 @@ switch (_filter) do
 	case 0:
 	{
 		_ret set[count _ret,["U_Rangemaster","Cop Uniform",25]];
-		if(__GETC__(life_coplevel) > 1) then
+		if(__GETC__(life_coplevel) > 3) then
 		{
 			_ret set[count _ret,["U_B_CombatUniform_mcam_tshirt",nil,350]];
 			_ret set[count _ret,["U_B_survival_uniform",nil,1250]];
 		};
-		if(__GETC__(life_coplevel) > 2) then
+		if(__GETC__(life_coplevel) > 5) then
 		{
 			_ret set[count _ret,["U_B_CombatUniform_mcam_worn",nil,550]];
 		};
+		[] call life_fnc_copUniform;
 	};
 	
 	//Hats
 	case 1:
 	{
-		if(__GETC__(life_coplevel) > 1) then
+		_ret set[count _ret,["H_Cap_blu_POLICE",nil,35]];
+		
+		if(__GETC__(life_coplevel) > 3) then
 		{
+			_ret set[count _ret,["H_Beret_blk_POLICE",nil,110]];
 			_ret set[count _ret,["H_HelmetB_plain_mcamo",nil,75]];
 			_ret set[count _ret,["H_Booniehat_mcamo",nil,120]];
 		};
-		
-		if(__GETC__(life_coplevel) > 2) then
+
+		if(__GETC__(life_coplevel) > 5) then
 		{
 			_ret set[count _ret,["H_MilCap_mcamo",nil,100]];
 		};
@@ -70,8 +74,13 @@ switch (_filter) do
 		_ret set[count _ret,["V_Rangemaster_belt",nil,800]];
 		if(__GETC__(life_coplevel) > 1) then
 		{
-			_ret set[count _ret,["V_PlateCarrier2_rgr",nil,1500]];
+			_ret set[count _ret,["V_TacVest_blk_POLICE",nil,1500]];
 		};
+		if(__GETC__(life_coplevel) > 3) then
+		{
+			_ret set[count _ret,["V_PlateCarrier1_blk",nil,3000]];
+		};
+		[] call life_fnc_copUniform;
 	};
 	
 	//Backpacks
@@ -79,11 +88,17 @@ switch (_filter) do
 	{
 		_ret =
 		[
-			["B_Kitbag_cbr",nil,800],
-			["B_FieldPack_cbr",nil,500],
-			["B_AssaultPack_cbr",nil,700],
-			["B_Bergen_sgg",nil,2500],
-			["B_Carryall_cbr",nil,3500]
+			["B_AssaultPack_rgr",nil,800],
+			["B_AssaultPack_blk",nil,800],
+			["B_Kitbag_mcamo",nil,1000],
+			["B_Bergen_blk",nil,1200],
+			["B_Bergen_mcamo",nil,1200],
+			["B_TacticalPack_mcamo",nil,1400],
+			["B_TacticalPack_blk",nil,1400],
+			["B_TacticalPack_rgr",nil,1400],
+			["B_Carryall_mcamo",nil,2000],
+			["B_Carryall_khk",nil,2000],
+			["B_UAV_01_backpack_F",nil,4800]
 		];
 	};
 };

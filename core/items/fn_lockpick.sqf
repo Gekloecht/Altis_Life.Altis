@@ -5,7 +5,7 @@
 	Description:
 	Main functionality for lock-picking.
 */
-private["_curTarget","_distance","_isVehicle","_title","_progressBar","_cP","_titleText","_dice","_badDistance"];
+private["_curTarget","_car","_distance","_isVehicle","_title","_progressBar","_cP","_titleText","_dice","_badDistance"];
 _curTarget = cursorTarget;
 life_interrupted = false;
 if(life_action_inUse) exitWith {};
@@ -21,6 +21,7 @@ if(!_isVehicle && !(_curTarget getVariable["restrained",false])) exitWith {};
 
 _title = format["Lock-picking %1",if(!_isVehicle) then {"Handcuffs"} else {getText(configFile >> "CfgVehicles" >> (typeOf _curTarget) >> "displayName")}];
 life_action_inUse = true; //Lock out other actions
+
 
 //Setup the progress bar
 disableSerialization;
@@ -54,8 +55,8 @@ while {true} do
 player playActionNow "stop";
 if(!alive player OR life_istazed) exitWith {life_action_inUse = false;};
 if((player getVariable["restrained",false])) exitWith {life_action_inUse = false;};
-if(!isNil "_badDistance") exitWith {titleText["You got to far away from the target.","PLAIN"]; life_action_inUse = false;};
-if(life_interrupted) exitWith {life_interrupted = false; titleText["Action cancelled","PLAIN"]; life_action_inUse = false;};
+if(!isNil "_badDistance") exitWith {titleText["Vous êtes trop loin de la cible.","PLAIN"]; life_action_inUse = false;};
+if(life_interrupted) exitWith {life_interrupted = false; titleText["Action annulée","PLAIN"]; life_action_inUse = false;};
 if(!([false,"lockpick",1] call life_fnc_handleInv)) exitWith {life_action_inUse = false;};
 
 life_action_inUse = false;
@@ -67,12 +68,13 @@ if(!_isVehicle) then {
 } else {
 	_dice = random(100);
 	if(_dice < 30) then {
-		titleText["You now have keys to this vehicle.","PLAIN"];
+		titleText["Vous avez crocheté le véhicule.","PLAIN"];		
 		life_vehicles set[count life_vehicles,_curTarget];
 		[[getPlayerUID player,name player,"487"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
 	} else {
+		[[_curTarget],"life_fnc_CarAlarmSound",nil,true] spawn life_fnc_MP;
 		[[getPlayerUID player,name player,"215"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
-		[[0,format["%1 was seen trying to lockpick a car.",name player]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
-		titleText["The lockpick broke.","PLAIN"];
+		[[0,format["%1 a été vu entrain de crocheter une voiture.",name player]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
+		titleText["Le crochetage a échoué.","PLAIN"];
 	};
 };

@@ -549,14 +549,14 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"",
 				"
-				Y: Open Player Menu<br/>
-				U: Lock and unlock cars<br/>
-				F: Cop Siren (if cop)<br/>
-				T: Vehicle Trunk<br/>
-				Left Shift + R: Restrain (Cop Only)<br/>
-				Left Shift + G: Knock out / stun (Civ Only, used for robbing them)<br/>
-				Left Windows: Main Interaction key which is used for picking up items/money, interacting with cars (repair,etc) and for cops to interact with civilians. Can be rebound to a single key like H by pressing ESC->Configure->Controls->Custom->Use Action 10<br/>
-				Left Shift + L: Activates cop siren lights (as a cop).<br/>
+				Y: Ouvrir Menu Joueur<br/>
+				U: Verouiller/Déverouiller Voiture<br/>
+				F: Sirène Police/Ambulance (Si Medecin ou Policier)<br/>
+				T: Coffre Vehicule<br/>
+				Left Shift + R: Menotter (Si Policier)<br/>
+				Left Shift + G: Assomer (Si Civil)<br/>
+				Left Windows: Touche d'interaction principale pour prendre objet/argent, intéragir avec les voitures (Réparer,etc) et intéragir avec les civils pour les policiers. Peut être modifiée ESC->Configurer->Controles->Personnalisé->Touche Utilisateur 10<br/>
+				Left Shift + L: Gyrophares (Si Medecin ou Policier).<br/>
 				"
 		]
 	];

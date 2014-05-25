@@ -11,6 +11,7 @@ _className = [_this,0,"",[""]] call BIS_fnc_param;
 switch (_className) do
 {
 	case "C_Offroad_01_F": {65};
+	case "I_G_Offroad_01_F": {75};
 	case "B_G_Offroad_01_F": {65};
 	case "B_Quadbike_01_F": {25};
 	case "I_Truck_02_covered_F": {250};
@@ -38,7 +39,12 @@ switch (_className) do
 	case "I_Boat_Armed_01_minigun_F": {175};
 	case "B_G_Boat_Transport_01_F": {45};
 	case "B_Boat_Transport_01_F": {45};
-	case "Land_Box_AmmoOld_F": {_weight = 700;};
-    case "B_supplyCrate_F": {_weight = 1000;};
+	case "Land_Box_AmmoOld_F": {700};
+    case "B_supplyCrate_F": {1000};
+	case "B_Truck_01_covered_F": {400};
+	case "O_Truck_03_covered_F": {500};
+	case "O_Truck_03_ammo_F": {530};
+	case "O_Truck_03_transport_F": {450};
+	case "O_MRAP_02_hmg_F": {250};
 	default {-1};
 };

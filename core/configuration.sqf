@@ -151,6 +151,8 @@ life_inv_items =
 	"life_inv_cokep",
 	"life_inv_diamondr",
 	"life_inv_spikeStrip",
+	"life_inv_barriere",
+	"life_inv_cone",
 	"life_inv_rock",
 	"life_inv_cement",
 	"life_inv_goldbar",
@@ -280,6 +282,8 @@ buy_array =
 	["fuelF",850],
 	["peach",68],
 	["spikeStrip",2500],
+	["barriere",1000],
+	["cone",100],
 	["storage1",50000],
     ["storage2",250000],
     ["phosphore",1000]

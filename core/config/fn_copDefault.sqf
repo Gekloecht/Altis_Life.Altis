@@ -20,6 +20,7 @@ removeHeadGear player;
 
 //Load player with default cop gear.
 player addUniform "U_Rangemaster";
+player addHeadgear "H_Cap_blu_POLICE";
 player addVest "V_Rangemaster_belt";
 player addMagazine "16Rnd_9x21_Mag";
 player addMagazine "16Rnd_9x21_Mag";
@@ -34,3 +35,4 @@ player addItem "ItemCompass";
 player assignItem "ItemCompass";
 
 [] call life_fnc_saveGear;
+[] call life_fnc_copUniform;

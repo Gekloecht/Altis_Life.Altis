@@ -24,5 +24,6 @@ if(!(str(player) in ["cop_1","cop_2","cop_3","cop_4"])) then {
 };
 
 [] call life_fnc_spawnMenu;
+[] call life_fnc_copUniform; // Line added for Cop Uniforms
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.

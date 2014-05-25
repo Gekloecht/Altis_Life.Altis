@@ -41,6 +41,7 @@ class Life_Client_Core
 	class Actions
 	{
 		file = "core\actions";
+		class surrender {};
 		class buyLicense {};
 		class chemlightUse {};
 		class heal {};
@@ -80,6 +81,8 @@ class Life_Client_Core
 		class gatherCocaine {};
 		class pumpRepair {};
 		class packupSpikes {};
+		class packupBarriere {};
+		class packupCone {};
 		class robFederal {};
 		class storeVehicle {};
 		class robAction {};
@@ -123,6 +126,7 @@ class Life_Client_Core
 		class clothing_bruce {};
 		class clothing_reb {};
 		class clothing_dive {};
+		class clothing_med {};
 	};
 	
 	class session
@@ -198,6 +202,7 @@ class Life_Client_Core
 		class fetchVehInfo {};
 		class updateCash {};
         class vehicleGarage {};
+		class handleFlashbang {};
 	};
 	
 	class Network
@@ -292,6 +297,7 @@ class Life_Client_Core
 		class houseOwnerSearch {};
         class houseInvSearch {};
         class raidHouse {};
+		class copUniform {};
 	};
 	
 	class Gangs
@@ -340,6 +346,15 @@ class Life_Client_Core
 		class lockpick {};
 		class spikeStrip {};
 		class jerryRefuel {};
+		class bankalarmsound {};
+		class CarAlarmSound {};
+		class barriere {};
+		class cone {};
+		class weed {};
+		class alcool {};
+		class heroine {};
+		class meth {};
+		class cocaine {};
 	};
 	
 	class Dialog_Controls

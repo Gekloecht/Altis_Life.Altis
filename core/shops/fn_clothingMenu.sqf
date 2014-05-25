@@ -6,6 +6,7 @@
 	Opens and initializes the clothing store menu.
 	Started clean, finished messy.
 */
+#define __GETC__(var) (call var)  // added line for cop uniforms
 private["_list","_clothes","_pic","_filter"];
 createDialog "Life_Clothing";
 disableSerialization;
@@ -14,6 +15,7 @@ disableSerialization;
 if((_this select 3) in ["bruce","dive","reb"] && playerSide != civilian) exitWith {hint "You need to be a civilian to use this store!"; closeDialog 0;};
 if((_this select 3) == "reb" && !license_civ_rebel) exitWith {hint "You don't have rebel training yet!"; closeDialog 0;};
 if((_this select 3) in ["cop"] && playerSide != west) exitWith {hint "You need to be a cop to use this store!"; closeDialog 0;};
+if((_this select 3) in ["med"] && playerSide != independent) exitWith {hint "Vous devez être medecin!"; closeDialog 0;};
 
 life_clothing_store = _this select 3;
 
@@ -114,6 +116,7 @@ life_clothesPurchased = nil;
 if((life_clothing_purchase select 0) == -1) then
 {
 	if(life_oldClothes != uniform player) then {player addUniform life_oldClothes;};
+	[] call life_fnc_copUniform;
 };
 //Check hat
 if((life_clothing_purchase select 1) == -1) then
@@ -146,6 +149,7 @@ if((life_clothing_purchase select 3) == -1) then
 			{[_x,true,false,false,true] call life_fnc_handleItem;} foreach life_oldVestItems;
 		};
 	};
+	[] call life_fnc_copUniform;
 };
 
 //Check Backpack
@@ -163,6 +167,7 @@ if((life_clothing_purchase select 4) == -1) then
 };
 
 life_clothing_purchase = [-1,-1,-1,-1,-1];
+[] call life_fnc_copUniform;
 //Hotfix in for cop gear
 if(playerSide == west) then
 {

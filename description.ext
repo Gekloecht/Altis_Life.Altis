@@ -7,6 +7,7 @@ respawndelay = 5;
 disabledAI = true;
 disableChannels[]={0,1,2};
 enableDebugConsole = 1;
+LoadScreen  = "images\TEST.jpg";
 
 #include "=BTC=_Logistic\=BTC=_Lift\=BTC=_Hud.h"
 

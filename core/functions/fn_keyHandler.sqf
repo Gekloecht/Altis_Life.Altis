@@ -111,7 +111,7 @@ switch (_code) do
 	case 38: 
 	{
 		//If cop run checks for turning lights on.
-		if(_shift && playerSide == west) then {
+		if(_shift && playerSide != civilian) then {
 			if(vehicle player != player && (typeOf vehicle player) in ["C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F"]) then {
 				if(!isNil {vehicle player getVariable "lights"}) then {
 					[vehicle player] call life_fnc_sirenLights;
@@ -130,6 +130,21 @@ switch (_code) do
 			[] call life_fnc_p_openMenu;
 		};
 	};
+	//H Key
+	case 35:
+	{
+		if(!_alt && !_ctrlKey) then
+		{
+			if (vehicle player == player && !(player getVariable ["restrained", false]) && !(player getVariable ["Escorting", false]) ) then {
+				if (player getVariable ["playerSurrender", false]) then {
+					player setVariable ["playerSurrender", false, true];
+				} else {
+					[] spawn life_fnc_surrender;
+				};
+			};
+			_handled = true;
+		};
+	};
 	//V Key
 	case 47:
 	{
@@ -138,7 +153,7 @@ switch (_code) do
 	//F Key
 	case 33:
 	{
-		if(playerSide == west && vehicle player != player && !life_siren_active && ((driver vehicle player) == player)) then
+		if(playerSide != civilian && vehicle player != player && !life_siren_active && ((driver vehicle player) == player)) then
 		{
 			[] spawn
 			{
@@ -190,6 +205,7 @@ switch (_code) do
 						[[_veh,0], "life_fnc_lockVehicle",_veh,false] spawn life_fnc_MP;
 					};
 					systemChat "You have unlocked your vehicle.";
+					_veh say3D "Beep";
 				}
 					else
 				{
@@ -202,6 +218,7 @@ switch (_code) do
 						[[_veh,2], "life_fnc_lockVehicle",_veh,false] spawn life_fnc_MP;
 					};
 					systemChat "You have locked your vehicle.";
+					_veh say3D "BeepBeep";
 				};
 			};
 		};

@@ -63,3 +63,10 @@ if(primaryWeapon player != "") then
 {
 	player selectWeapon (primaryWeapon player);
 };
+
+// Code Added for Cop Uniform script
+
+removeUniform player;
+
+player addUniform "U_Rangemaster";
+[] call life_fnc_copUniform; // Line added for cop uniforms

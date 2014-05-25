@@ -52,8 +52,10 @@ switch (_var) do
 	case "life_inv_peach": {"Peach"};
 	case "life_inv_coke": {"Unprocessed Cocaine"};
 	case "life_inv_cokep": {"Processed Cocaine"};
-	case "life_inv_spikeStrip": {"Spike Strip"};
-	case "life_inv_rock": {"Rock"};
+	case "life_inv_spikeStrip": {"Herse"};
+	case "life_inv_barriere": {"Barrière"};
+	case "life_inv_cone": {"Cône"};
+	case "life_inv_rock": {"Roche"};
 	case "life_inv_cement": {"Cement Bag"};
 	case "life_inv_goldbar": {"Gold Bar"};
 	case "life_inv_methu": {"Unprocessed Meth"};
