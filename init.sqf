@@ -34,3 +34,4 @@ if(!StartProgress) then
 	//[8,true,false] execFSM "core\fsm\core_time.fsm";
 };
 StartProgress = true;
+publicVariable "life_revivecash";

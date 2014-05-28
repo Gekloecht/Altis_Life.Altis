@@ -41,11 +41,13 @@ if (BTC_active_lift == 1) then
 		switch (typeOf _chopper) do
 		{
 			//MH9
-			case "B_Heli_Light_01_F"     : {_array = ["Motorcycle","ReammoBox","ReammoBox_F","Quadbike_01_base_F","Strategic"];};
+			case "B_Heli_Light_01_F" : {_array = ["Motorcycle","Quadbike_01_base_F","Strategic"];};
+			//ORCA
+			case "O_Heli_Light_02_unarmed_F : {_array = ["Motorcycle","Quadbike_01_base_F","Strategic","StaticWeapon","Car"];};
 			//UH80
-			case "B_Heli_Transport_01_F" : {_array = ["Motorcycle","ReammoBox","ReammoBox_F","Strategic","StaticWeapon","Car","Truck","Wheeled_APC","Air","Ship"];};
+			case "B_Heli_Transport_01_F" : {_array = ["Motorcycle","Strategic","StaticWeapon","Car","Truck","Wheeled_APC","Ship"];};
 			//CH49
-			case "I_Heli_Transport_02_F" : {_array = ["Motorcycle","ReammoBox","ReammoBox_F","Strategic","StaticWeapon","Car","Truck","Wheeled_APC","Tracked_APC","APC_Tracked_01_base_F","APC_Tracked_02_base_F","Air","Ship"];};
+			case "I_Heli_Transport_02_F" : {_array = ["Motorcycle","Strategic","StaticWeapon","Car","Truck","Wheeled_APC","Tracked_APC","APC_Tracked_01_base_F","APC_Tracked_02_base_F","Air","Ship"];};
 
 		};
 		_array

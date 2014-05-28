@@ -96,6 +96,7 @@ class Life_Client_Core
 		class gatherMeth {};
 		class gatherGrapes {};
 		class gatherArtefact {};
+		class seizeObjects {};
 	};
 	
 	class Config

@@ -14,9 +14,9 @@ _escSync = {
 	disableSerialization;
 	
 	_syncManager = {
-		for [{_x=1},{_x<=6},{_x=_x+1}] do
+		for [{_x=1},{_x<=21},{_x=_x+1}] do
 		{
-			49 cutText[format["Can abort in %1", 6 - _x],"PLAIN DOWN"];
+			49 cutText[format["Vous pouvez vous deconnecter dans %1", 21 - _x],"PLAIN DOWN"];
 			sleep 1;
 			49 cutText["","PLAIN DOWN"];
 			if(isNull (findDisplay 49)) exitWith {};

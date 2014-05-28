@@ -104,21 +104,21 @@ _unit = _this select 0;
 				missionNamespace setVariable[_x,0];
 			};
 		};
-		
+	
 		case "life_cash":
 		{
 			if(life_cash > 0) then
 			{
-				_pos = _unit modelToWorld[0,3,0];
-				_pos = [_pos select 0, _pos select 1, 0];
-				_obj = "Land_Money_F" createVehicle _pos;
-				_obj setVariable["item",["money",_value],true];
-				_obj setPos _pos;
-				[[_obj],"life_fnc_simDisable",nil,true] spawn life_fnc_MP;
-				missionNamespace setVariable[_x,0];
+				//_pos = _unit modelToWorld[0,3,0];
+				//_pos = [_pos select 0, _pos select 1, 0];
+				//_obj = "Land_Money_F" createVehicle _pos;
+				//_obj setVariable["item",["money",_value],true];
+				//_obj setPos _pos;
+				//[[_obj],"life_fnc_simDisable",nil,true] spawn life_fnc_MP;
+				//missionNamespace setVariable[_x,0];
 			};
 		};
-		
+	
 		default
 		{
 			if(_value > 0) then

@@ -21,12 +21,13 @@ if(isNull _cop) exitWith {};
 		if(!(player getVariable["restrained",FALSE])) exitWith {};
 		if(!([west,getPos player,30] call life_fnc_nearUnits) && (player getVariable["restrained",FALSE]) && vehicle player == player) exitWith {
 			player setVariable["restrained",FALSE,TRUE];
-			titleText["You have been released automatically for excessive restrainment time","PLAIN"];
+			titleText["Vous avez été relaché automatiquement pour abus avec les menottes","PLAIN"];
 		};
 	};
 };
 
-titleText[format["You have been restrained by %1",name _cop],"PLAIN"];
+titleText[format["Vous avez été arreté par %1",name _cop],"PLAIN"];
+player say3D "cuff";
 				
 while {player getVariable "restrained"} do
 {
@@ -54,5 +55,6 @@ while {player getVariable "restrained"} do
 		
 if(alive player) then
 {
-	titleText["You have been released, press V to get out of restrainment.","PLAIN"];
+	titleText["Vous avez été demenotté, appuyez sur V pour continuez.","PLAIN"];
+	player say3D "cuff";
 };

@@ -50,6 +50,14 @@ switch (_code) do
 	case _interactionKey:
 	{
 		if(!life_action_inUse) then {
+			if(playerSide == west) then
+			{
+				player setObjectTextureGlobal [0, "cop.jpg"];
+			};
+			if(playerSide == independent) then
+			{
+				player setObjectTextureGlobal [0, "textures\medic_uniform.jpg"];
+			};
 			[] spawn 
 			{
 				private["_handle"];
@@ -204,7 +212,7 @@ switch (_code) do
 					{
 						[[_veh,0], "life_fnc_lockVehicle",_veh,false] spawn life_fnc_MP;
 					};
-					systemChat "You have unlocked your vehicle.";
+					systemChat "Vous avez déverouiller votre vehicule.";
 					_veh say3D "Beep";
 				}
 					else
@@ -217,7 +225,7 @@ switch (_code) do
 					{
 						[[_veh,2], "life_fnc_lockVehicle",_veh,false] spawn life_fnc_MP;
 					};
-					systemChat "You have locked your vehicle.";
+					systemChat "Vous avez verouiller votre vehicule.";
 					_veh say3D "BeepBeep";
 				};
 			};

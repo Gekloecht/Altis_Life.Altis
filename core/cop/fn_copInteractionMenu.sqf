@@ -1,7 +1,7 @@
 /*
 	File: fn_copInteractionMenu.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Replaces the mass addactions for various cop actions towards another player.
 */
@@ -12,7 +12,6 @@
 #define Btn5 37454
 #define Btn6 37455
 #define Btn7 37456
-#define Btn8 37457
 #define Title 37401
 
 private["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7"];

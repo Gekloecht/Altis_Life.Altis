@@ -35,6 +35,7 @@ hint format["You bought a %1 for $%2",getText(configFile >> "CfgVehicles" >> _cl
 //Spawn the vehicle and prep it.
 _vehicle = createVehicle [_className, (getMarkerPos _spawnPoint), [], 0, "NONE"];
 _vehicle allowDamage false; //Temp disable damage handling..
+_vehicle lock 2;
 _vehicle setVectorUp (surfaceNormal (getMarkerPos _spawnPoint));
 _vehicle setDir (markerDir _spawnPoint);
 _vehicle setPos (getMarkerPos _spawnPoint);
@@ -48,6 +49,11 @@ _vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
 //Side Specific actions.
 switch(playerSide) do {
 	case west: {
+		[_vehicle,"cop_offroad",true] call life_fnc_vehicleAnimate;
+		[_vehicle,"civ_littlebird",true] call life_fnc_vehicleAnimate;
+	};
+	
+	case indepedent: {
 		[_vehicle,"cop_offroad",true] call life_fnc_vehicleAnimate;
 	};
 	

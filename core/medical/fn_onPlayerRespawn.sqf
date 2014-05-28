@@ -25,6 +25,7 @@ if(life_is_arrested) then {
 //Load our gear as a cop incase something horrible happens
 if(playerSide == west) then {
 	[] spawn life_fnc_loadGear;
+	[] call life_fnc_copUniform;
 };
 
 _unit addRating 9999999999999999; //Set our rating to a high value, this is for a ARMA engine thing.

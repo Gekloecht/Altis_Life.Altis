@@ -11,20 +11,21 @@ _oldGear = [life_corpse] call life_fnc_fetchDeadGear;
 [_oldGear] spawn life_fnc_loadDeadGear;
 [[life_corpse],"life_fnc_corpse",nil,FALSE] spawn life_fnc_MP;
 _dir = getDir life_corpse;
-hint format["%1 has revived you and a fee of $%2 was taken from your bank account for their services.",_medic,[(call life_revive_fee)] call life_fnc_numberText];
+//hint format["%1 has revived you and a fee of $%2 was taken from your bank account for their services.",_medic,[(call life_revive_fee)] call life_fnc_numberText];
 
 closeDialog 0;
 life_deathCamera cameraEffect ["TERMINATE","BACK"];
 camDestroy life_deathCamera;
+/*
 
-//Take fee for services.
 if(life_atmcash > (call life_revive_fee)) then {
 	life_atmcash = life_atmcash - (call life_revive_fee);
 } else {
 	life_atmcash = 0;
 };
-
+*/
 //Bring me back to life.
+[] call life_fnc_copUniform;
 player setDir _dir;
 player setPosASL (visiblePositionASL life_corpse);
 life_corpse setVariable["Revive",nil,TRUE];
@@ -34,3 +35,13 @@ hideBody life_corpse;
 player setVariable["Revive",nil,TRUE];
 player setVariable["name",nil,TRUE];
 player setVariable["Reviving",nil,TRUE];
+[] call life_fnc_setupActions;
+[] call life_fnc_copUniform;
+if(playerside == west) then
+	{
+	player setObjectTextureGlobal [0, "cop.jpg"];
+	};
+if(playerside == indepedent) then
+	{
+	player setObjectTextureGlobal [0, "textures\medic_uniform.jpg"];
+	};

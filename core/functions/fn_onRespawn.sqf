@@ -21,6 +21,7 @@ switch(playerSide) do
 	case west: 
 	{
 		[] spawn life_fnc_loadGear;
+		[] call life_fnc_copUniform;
 	};
 	
 	case civilian:

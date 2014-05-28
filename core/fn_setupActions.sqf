@@ -34,11 +34,14 @@ switch (playerSide) do
 		life_actions = life_actions + [player addAction["Placer le cone",{if(!isNull life_cone) then {detach life_cone; life_cone = ObjNull;};},"",999,false,false,"",'!isNull life_cone']];
 		
 		//Reprendre des Cones
-		life_actions = life_actions + [player addAction["Reprendre le cone",life_fnc_packupCone,"",0,false,false,"",
+		life_actions = life_actions + [player addAction["Reprendre le cône",life_fnc_packupCone,"",0,false,false,"",
 		' _cone = nearestObjects[getPos player,["RoadCone_F"],8] select 0; !isNil "_cone" && !isNil {(_cone getVariable "item")}']];
 		life_actions = life_actions + [player addAction["Reprendre le cone",life_fnc_pickupItem,"",0,false,false,"",
 		' !isNull cursorTarget && (typeOf cursorTarget) == "Land_Suitcase_F" && ((cursorTarget getVariable "item") select 0) == "cone" && (player distance cursorTarget) < 3 ']];
-
+		
+		//Saisir Objets
+		life_actions = life_actions + [player addAction["Saisir objets",life_fnc_seizeObjects,cursorTarget,0,false,false,"",'((count(nearestObjects [player,["WeaponHolder"],3])>0) || (count(nearestObjects [player,["GroundWeaponHolder"],3])>0) || (count(nearestObjects [player,["WeaponHolderSimulated"],3])>0))']];
+		
 	};
 	case civilian:
 	{

@@ -104,7 +104,7 @@ switch (_vehicle) do
 			["textures\suv_rouge.jpg","civ"],
 			["textures\suv_taxi.jpg","civ"],
 			["textures\med_suv.jpg","med"]
-			
+
 		];
 	};
 
