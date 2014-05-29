@@ -5,6 +5,9 @@ X_Client = false;
 X_JIP = false;
 StartProgress = false;
 
+// enable logistics
+_logistic = execVM "=BTC=_Logistic\=BTC=_Logistic_Init.sqf";
+
 if(!isDedicated) then { X_Client = true;};
 /*
 if(isNull player) then 
