@@ -68,10 +68,10 @@
 			<Original>Envoyer</Original>
 		</Key>
 		<Key ID="STR_CELL_TextPolice">
-			<Original>Envoyer Police</Original>
+			<Original>Police</Original>
 		</Key>
 		<Key ID="STR_CELL_TextAdmins">
-			<Original>Envoyer Admins</Original>
+			<Original>Admins</Original>
 		</Key>
 		<Key ID="STR_CELL_AdminMsg">
 			<Original>Admin Message</Original>

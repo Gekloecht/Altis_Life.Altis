@@ -84,6 +84,28 @@ switch (_shop) do
 		];
 	};
 	
+	case "kart_car_1":
+	{
+		_return = 
+		[
+			["C_Kart_01_Vrana_F",100000],
+			["C_Kart_01_Red_F",100000],
+			["C_Kart_01_Fuel_F",100000],
+			["C_Kart_01_Blu_F",100000]
+		];
+	};
+	
+	case "kart_car_2":
+	{
+		_return = 
+		[
+			["C_Kart_01_Vrana_F",100000],
+			["C_Kart_01_Red_F",100000],
+			["C_Kart_01_Fuel_F",100000],
+			["C_Kart_01_Blu_F",100000]
+		];
+	}; 
+	
 	case "civ_car_1":
 	{
 		_return = 

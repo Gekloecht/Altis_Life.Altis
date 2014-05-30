@@ -9,8 +9,6 @@ disableChannels[]={0,1,2};
 enableDebugConsole = 1;
 LoadScreen  = "images\TEST.jpg";
 
-#include "=BTC=_Logistic\=BTC=_Lift\=BTC=_Hud.h"
-
 class Header
 {
 	gameType = RPG;
@@ -25,6 +23,7 @@ corpseLimit = 150;
 corpseRemovalMinTime = 999;
 corpseRemovalMaxTime = 9999;
 
+#include "=BTC=_Logistic\=BTC=_Lift\=BTC=_Hud.h"
 #include "dialog\MasterHandler.h"
 
 class RscTitles
