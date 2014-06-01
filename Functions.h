@@ -129,8 +129,11 @@ class Life_Client_Core
 		class clothing_dive {};
 		class clothing_med {};
 		class clothing_kart {};
+<<<<<<< HEAD
 		class clothing_presse {};
 		class clothing_tbs {};
+=======
+>>>>>>> e4083f2344494e6571207b3711a32be0d4736c3c
 	};
 	
 	class session
