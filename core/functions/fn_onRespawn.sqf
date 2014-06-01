@@ -54,5 +54,10 @@ _unit addRating 100000;
 [] call life_fnc_hudUpdate;
 cutText ["","BLACK IN"];
 
+//Coptags LOOK HERE
+private["_getRank"];
+_getRank = switch (__GETC__(life_coplevel)) do {case 1: {1}; case 2: {2}; case 3: {3}; case 4: {4}; case 5: {5}; case 6: {6}; case 7: {7}; default {0};};
+player setVariable["coplevel",_getRank,TRUE];
+
 [] call life_fnc_civFetchGear;
 [1,true] call life_fnc_sessionHandle;

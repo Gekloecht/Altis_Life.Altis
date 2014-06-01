@@ -84,6 +84,28 @@ switch (_shop) do
 		];
 	};
 	
+	case "kart_car_1":
+	{
+		_return = 
+		[
+			["C_Kart_01_Vrana_F",100000],
+			["C_Kart_01_Red_F",100000],
+			["C_Kart_01_Fuel_F",100000],
+			["C_Kart_01_Blu_F",100000]
+		];
+	};
+	
+	case "kart_car_2":
+	{
+		_return = 
+		[
+			["C_Kart_01_Vrana_F",100000],
+			["C_Kart_01_Red_F",100000],
+			["C_Kart_01_Fuel_F",100000],
+			["C_Kart_01_Blu_F",100000]
+		];
+	}; 
+	
 	case "civ_car_1":
 	{
 		_return = 
@@ -228,14 +250,14 @@ switch (_shop) do
 			["O_Truck_03_ammo_F",1500000],
 			["B_Heli_Light_01_F",325000],
 			["O_Heli_Light_02_unarmed_F",850000]
+			//["O_MRAP_02_hmg_F",6700000]
 		];
 
 		if(license_civ_rebel) then
 		{
 			_return set[count _return,
 			["B_G_Offroad_01_armed_F",1500000]];
-			//_return set[count _return,
-			//["O_MRAP_02_hmg_F",6700000]];
+		
 		};
 	};
 
@@ -251,6 +273,7 @@ switch (_shop) do
 			["O_Truck_03_ammo_F",1500000],
 			["B_Heli_Light_01_F",325000],
 			["O_Heli_Light_02_unarmed_F",850000]
+			//["O_MRAP_02_hmg_F",6700000]
 
 		];
 
@@ -258,8 +281,7 @@ switch (_shop) do
 		{
 			_return set[count _return,
 			["B_G_Offroad_01_armed_F",1500000]];
-			//_return set[count _return,
-			//["O_MRAP_02_hmg_F",6700000]];
+			
 
 
 		};

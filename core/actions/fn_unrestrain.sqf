@@ -9,5 +9,6 @@ _unit setVariable["restrained",FALSE,TRUE];
 _unit setVariable["Escorting",FALSE,TRUE];
 _unit setVariable["transporting",FALSE,TRUE];
 detach _unit;
+player say3D "cuff";
 
 [[0,format["%1 a été relaché par %2",name _unit, name player]],"life_fnc_broadcast",west,FALSE] call life_fnc_MP;

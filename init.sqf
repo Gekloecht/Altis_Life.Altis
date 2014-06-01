@@ -1,12 +1,12 @@
+// enable logistics
+_logistic = execVM "=BTC=_Logistic\=BTC=_Logistic_Init.sqf";
+
 enableSaving [false, false];
 
 X_Server = false;
 X_Client = false;
 X_JIP = false;
 StartProgress = false;
-
-// enable logistics
-_logistic = execVM "=BTC=_Logistic\=BTC=_Logistic_Init.sqf";
 
 if(!isDedicated) then { X_Client = true;};
 /*
@@ -31,6 +31,7 @@ if(X_Client) then
 [] execVM "briefing.sqf"; //Load Briefing
 [] execVM "KRON_Strings.sqf";
 [] execVM "admin\fn_loop.sqf";
+[] execVM "module_performance\init.sqf";
 if(!StartProgress) then
 {
 	[8,true,true,12] execFSM "core\fsm\timeModule.fsm";

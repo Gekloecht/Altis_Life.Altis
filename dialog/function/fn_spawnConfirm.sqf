@@ -53,4 +53,6 @@ if(life_firstSpawn) then {
 	life_firstSpawn = false;
 	[] call life_fnc_welcomeNotification;
 };
+player say2d "Intro";
+
 [] call life_fnc_hudSetup;
