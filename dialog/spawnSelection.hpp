@@ -8,7 +8,8 @@ class life_spawn_selection
 	{
 		class life_RscTitleBackground : Life_RscText
 		{
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
+			//colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
+			colorBackground[] = {0.45,0.45,0.45,0.98};
 			idc = -1;
 			x = 0.1; y = 0.2;
 			w = 0.8; h = (1 / 25);
@@ -71,7 +72,8 @@ class life_spawn_selection
 		class spawnButton : Life_RscButtonMenu
 		{
 			idc = -1;
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			//colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			colorBackground[] = {0.45,0.45,0.45,0.98};
 			text = "$STR_Spawn_Spawn";
 			onButtonClick = "[] call life_fnc_spawnConfirm";
 			x = 0.11; y = 0.69;

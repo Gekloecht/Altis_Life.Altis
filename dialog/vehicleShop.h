@@ -10,7 +10,8 @@ class Life_Vehicle_Shop_v2
 	{
 		class Life_RscTitleBackground : Life_RscText
 		{
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
+			//colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
+			colorBackground[] = {0.45,0.45,0.45,0.98};
 			idc = -1;
 			x = 0.1;
 			y = 0.2;
@@ -42,7 +43,8 @@ class Life_Vehicle_Shop_v2
 		{
 			idc = -1;
 			text = "Shop Stock";
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
+			//colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
+			colorBackground[] = {0.45,0.45,0.45,0.98};
 			x = 0.11; y = 0.26;
 			w = 0.3;
 			h = (1 / 25);
@@ -52,7 +54,8 @@ class Life_Vehicle_Shop_v2
 		{
 			idc = 2330;
 			text = "Vehicle Information";
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
+			//colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
+			colorBackground[] = {0.45,0.45,0.45,0.98};
 			x = 0.42; y = 0.26;
 			w = 0.46;
 			h = (1 / 25);
@@ -99,7 +102,8 @@ class Life_Vehicle_Shop_v2
 			idc = 2302;
 			text = "";
 			sizeEx = 0.04;
-			colorBackground[] = {0.1,0.1,0.1,0.9};
+			//colorBackground[] = {0.1,0.1,0.1,0.9};
+			colorBackground[] = {0.45,0.45,0.45,0.98};
 			onLBSelChanged = "_this call life_fnc_vehicleShopLBChange";
 			
 			//Position & height

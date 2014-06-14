@@ -32,6 +32,8 @@ if(X_Client) then
 [] execVM "KRON_Strings.sqf";
 [] execVM "admin\fn_loop.sqf";
 [] execVM "module_performance\init.sqf";
+[] execVM "statusBar.sqf";
+
 if(!StartProgress) then
 {
 	[8,true,true,12] execFSM "core\fsm\timeModule.fsm";

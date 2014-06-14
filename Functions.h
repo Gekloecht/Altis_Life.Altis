@@ -249,6 +249,7 @@ class Life_Client_Core
 		class vehInventory {};
 		class vInteractionMenu {};
 		class vehicleWeight {};
+		class reverseTruckSound {};
 	};
 	
 	class Housing

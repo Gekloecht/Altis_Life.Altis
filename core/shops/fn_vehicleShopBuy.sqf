@@ -66,7 +66,7 @@ switch(playerSide) do {
 
 life_vehicles set[count life_vehicles,_vehicle]; //Add err to the chain.
 if(_mode) then {
-	if(!(_className in ["B_G_Offroad_01_armed_F","B_MRAP_01_hmg_F"])) then {
+	if(!(_className in ["B_G_Offroad_01_armed_F","O_MRAP_02_hmg_F"])) then {
 		[[(getPlayerUID player),playerSide,_vehicle,_colorIndex],"TON_fnc_vehicleCreate",false,false] spawn life_fnc_MP;
 	};
 };

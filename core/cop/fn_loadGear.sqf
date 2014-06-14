@@ -8,6 +8,47 @@
 private["_allowedItems","_loadout","_primary","_launcher","_handgun","_magazines","_uniform","_vest","_backpack","_items","_primitems","_secitems","_handgunitems","_uitems","_vitems","_bitems","_handle"];
 _loadout = cop_gear;
 
+_allowedItems =
+[
+						"arifle_sdar_F",
+						"20Rnd_556x45_UW_mag",
+						"hgun_P07_snds_F",
+						"16Rnd_9x21_Mag",
+						"hgun_ACPC2_F",
+						"9Rnd_45ACP_Mag",
+						"SMG_02_F",
+						"30Rnd_9x21_Mag",
+						"arifle_MX_Black_F",
+						"arifle_MXC_Black_F",
+						"arifle_MXM_Black_F",
+						"30Rnd_65x39_caseless_mag",
+						"srifle_EBR_F",
+						"20Rnd_762x51_Mag",
+						"LMG_Mk200_F",
+						"200Rnd_65x39_cased_Box",
+						"srifle_LRR_F",
+						"7Rnd_408_Mag",
+						"acc_flashlight",
+						"optic_Holosight",
+						"optic_ACO_grn_smg",
+						"optic_Aco_smg",
+						"optic_ACO_grn",
+						"optic_Aco",
+						"optic_MRCO",
+						"optic_Hamr", 
+						"optic_Arco",														
+						"optic_LRPS",
+						"optic_SOS",
+						"optic_tws",
+						"B_UavTerminal",
+						"acc_pointer_IR",							
+						"optic_DMS",
+						"MiniGrenade",
+						"SmokeShell"
+];
+
+
+
 if(isNil "_loadout") exitWith {[] call life_fnc_copDefault;}; //Slot data doesn't exist
 if(count _loadout == 0) exitWith {[] call life_fnc_copDefault;}; //Slot data doesn't exist
 _primary = _loadout select 0;
