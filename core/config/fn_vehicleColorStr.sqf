@@ -155,6 +155,9 @@ switch (_vehicle) do
 			case 11: {_color = "Vrana"};
 			case 12: {_color = "Waves Blue"};
 			case 13: {_color = "Rebel Digital"};
+			case 14: {_color = "Gray"};
+			case 15: {_color = "Shadow"};
+			case 16: {_color = "Wasp"};
 		};
 	};
 
@@ -162,10 +165,10 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "Black"};
-			case 1: {_color = "White / Blue"};
-			case 2: {_color = "Digi Green"};
-			case 3: {_color = "Desert Digi"};
+			case 0: {_color = "Noir"};
+			case 1: {_color = "Blanc / Bleu"};
+			case 2: {_color = "Foret Digital"};
+			case 3: {_color = "Desert Digital"};
 			case 4: {_color = "Medecin"};
 		};
 	};
